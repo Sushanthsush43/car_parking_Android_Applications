@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="240dp"
+    android:layout_height="150dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="20dp"
+    android:layout_margin="8dp">
+
+    <!-- Your XML layout file -->
+    <!-- ... (previous layout content) ... -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Canaramall"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/leftLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="37dp"
+            android:orientation="vertical">
+
+            <!-- From Time Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fromTimeLabel"
+                android:text="From Time"
+                android:textStyle="bold" />
+
+            <!-- From Time Value -->
+            <TextView
+                android:id="@+id/fromTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4:30" />
+
+            <!-- To Time Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toTimeLabel"
+                android:text="To Time"
+                android:textStyle="bold" />
+
+            <!-- To Time Value -->
+            <TextView
+                android:id="@+id/toTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6:30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rightLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="41dp"
+            android:orientation="vertical">
+
+            <!-- Date Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateLabel"
+                android:text="Date"
+                android:textStyle="bold" />
+
+            <!-- Date Value -->
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023-11-05" />
+
+            <!-- Slot Name Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/slotNameLabel"
+                android:text="Slot Name"
+                android:textStyle="bold" />
+
+            <!-- Slot Name Value -->
+            <TextView
+                android:id="@+id/slotName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A123" />
+        </LinearLayout>
+
+        <!-- price Name Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/priceLabel"
+            android:text="Price:$"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/priceLabel"
+            android:text="10"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <!-- ... (rest of your layout) ... -->
+
+</androidx.cardview.widget.CardView>

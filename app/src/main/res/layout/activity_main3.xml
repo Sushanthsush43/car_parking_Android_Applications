@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+
+            app:srcCompat="@drawable/pic" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Enter verification code"
+            android:textSize="24sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/num1"
+                android:gravity="center_horizontal"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:backgroundTint="@color/semi_transparent_black"
+                android:layout_marginTop="50dp"
+                android:inputType="number"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/num2"
+                android:layout_toRightOf="@id/num1"
+                android:layout_width="50dp"
+                android:backgroundTint="@color/semi_transparent_black"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:maxLength="1"
+                android:layout_marginTop="50dp"
+                android:inputType="number"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/num3"
+                android:layout_toRightOf="@id/num2"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:backgroundTint="@color/semi_transparent_black"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:maxLength="1"
+                android:layout_marginTop="50dp"
+                android:inputType="number"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/num4"
+                android:layout_toRightOf="@id/num3"
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:maxLength="1"
+                android:backgroundTint="@color/semi_transparent_black"
+                android:layout_marginTop="50dp"
+                android:inputType="number"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/semi_transparent_black"
+                android:text="Didn't receive code?"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/resend"
+                android:layout_toRightOf="@id/textView"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/purple_200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Resend"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next1"
+        android:layout_width="343dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="350dp"
+        android:text="Next"
+        android:background="@drawable/btn"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/edittext_background" />
+    <item android:right="0dp" android:left="0dp">
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="1dp"
+                android:color="#CCCCCC" /> <!-- Set the border color to light gray -->
+            <corners android:radius="4dp" /> <!-- Set the corner radius for a rounded rectangle -->
+        </shape>
+    </item>
+</layer-list>
